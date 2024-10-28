@@ -4,6 +4,7 @@
 
 package frc.robot;
 
+import edu.wpi.first.epilogue.Logged;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.DriverStation.Alliance;
@@ -14,6 +15,7 @@ import edu.wpi.first.wpilibj2.command.RunCommand;
 import frc.robot.subsystems.Swerve;
 import java.util.Optional;
 
+@Logged
 public class RobotContainer {
 
   private final XboxController driverController;
