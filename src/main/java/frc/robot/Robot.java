@@ -4,14 +4,11 @@
 
 package frc.robot;
 
-import edu.wpi.first.epilogue.Epilogue;
-import edu.wpi.first.epilogue.Logged;
-import edu.wpi.first.wpilibj.DataLogManager;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 
-@Logged
+// STEP 1: Add the epilogue @Logged annotation
 public class Robot extends TimedRobot {
   private Command m_autonomousCommand;
 
@@ -20,8 +17,7 @@ public class Robot extends TimedRobot {
   public Robot() {
     m_robotContainer = new RobotContainer();
 
-    DataLogManager.start();
-    Epilogue.bind(this);
+    // STEP 1: Start DataLogManager and call Epilogue.bind(this)
   }
 
   @Override
@@ -33,9 +29,7 @@ public class Robot extends TimedRobot {
   public void disabledInit() {}
 
   @Override
-  public void disabledPeriodic() {
-    m_robotContainer.disabledPeriodic();
-  }
+  public void disabledPeriodic() {}
 
   @Override
   public void disabledExit() {}
@@ -60,7 +54,6 @@ public class Robot extends TimedRobot {
     if (m_autonomousCommand != null) {
       m_autonomousCommand.cancel();
     }
-    m_robotContainer.teleopInit();
   }
 
   @Override
