@@ -19,7 +19,7 @@ public class Swerve {
    *
    * @param X field-relative X with range of -1.0 to 1.0
    * @param Y field-relative Y with range of -1.0 to 1.0
-   * @param Z field-relative Z with range of -1.0 to 1.0
+   * @param Omega field-relative omega with range of -1.0 to 1.0
    */
 
   // STEP 5: In the driveFieldRelative method update the estimatedPose by scaling the input
