@@ -22,7 +22,7 @@ public class RobotContainer {
   private void configureBindings() {
 
     // STEP 4: Set the Swerve default command to call Swerve's driveFieldRelative.
-    // Pass in the XBox Joystick values and add a Deadband
+    // Pass in the XBoxController values and add a Deadband
   }
 
   public void teleopInit() {}
