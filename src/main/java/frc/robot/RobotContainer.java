@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj2.command.Commands;
 // STEP 1: Add the epilogue @Logged annotation
 public class RobotContainer {
 
-  // STEP 4: Add a private final XBox Joystick for the driver
+  // STEP 4: Add a private final XBoxController for the driver's controller
 
   public RobotContainer() {
 
