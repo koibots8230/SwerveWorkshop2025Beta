@@ -15,16 +15,23 @@ public class Swerve {
   }
 
   /**
-   * Step 3: Public Method driveFieldRelative that takes field-relative inputs
+   * Step 3a: Private Method driveFieldRelative that takes field-relative inputs
    *
    * @param X field-relative X with range of -1.0 to 1.0
    * @param Y field-relative Y with range of -1.0 to 1.0
    * @param Omega field-relative omega with range of -1.0 to 1.0
    */
 
-  // STEP 5: In the driveFieldRelative method update the estimatedPose by scaling the input
-  // parameters
-  // and adding them to the current pose values.
+  /**
+   * Step 3b: Public command factory driveFieldRelativeCommand that takes field-relative inputs
+   * and returns a command that passes the input parameters into the private driveFieldRelative
+   * @param X field-relative X with range of -1.0 to 1.0
+   * @param Y field-relative Y with range of -1.0 to 1.0
+   * @param Omega field-relative omega with range of -1.0 to 1.0
+   */
+
+  // STEP 5: In the driveFieldRelative update the estimatedPose by scaling the input
+  // parameters and adding them to the current pose values.
 
   // STEP 6: Use the MAX speeds constants to scale the field-relative inputs to update the
   // estimatedPose

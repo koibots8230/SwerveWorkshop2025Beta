@@ -21,7 +21,7 @@ public class RobotContainer {
 
   private void configureBindings() {
 
-    // STEP 4: Set the Swerve default command to call Swerve's driveFieldRelative.
+    // STEP 4: Set the Swerve default command to Swerve's driveFieldRelative command.
     // Pass in the XBoxController values and add a Deadband
   }
 
