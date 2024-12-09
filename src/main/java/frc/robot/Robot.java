@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 
+// STEP 1: Add the epilogue @Logged annotation
 public class Robot extends TimedRobot {
   private Command m_autonomousCommand;
 
@@ -15,6 +16,8 @@ public class Robot extends TimedRobot {
 
   public Robot() {
     m_robotContainer = new RobotContainer();
+
+    // STEP 1: Start DataLogManager and call Epilogue.bind(this)
   }
 
   @Override

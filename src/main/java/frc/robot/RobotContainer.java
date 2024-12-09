@@ -7,12 +7,25 @@ package frc.robot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
 
+// STEP 1: Add the epilogue @Logged annotation
 public class RobotContainer {
+
+  // STEP 4: Add a private final XBoxController for the driver's controller
+
   public RobotContainer() {
+
+    // STEP 4: Initialize the driver's Joystick
+
     configureBindings();
   }
 
-  private void configureBindings() {}
+  private void configureBindings() {
+
+    // STEP 4: Set the Swerve default command to Swerve's driveFieldRelative command.
+    // Pass in the XBoxController values and add a Deadband
+  }
+
+  public void teleopInit() {}
 
   public Command getAutonomousCommand() {
     return Commands.print("No autonomous command configured");
