@@ -10,11 +10,15 @@ import edu.wpi.first.wpilibj2.command.Commands;
 // STEP 1: Add the epilogue @Logged annotation
 public class RobotContainer {
 
-  // STEP 4: Add a private final XBoxController for the driver's controller
+  // STEP 2: Add a private final Swerve
+
+  // STEP 4: Add a private final CommandXBoxController for the driver's controller
 
   public RobotContainer() {
 
-    // STEP 4: Initialize the driver's Joystick
+    // STEP 2: Initialize the Swerve
+
+    // STEP 4: Initialize the driver's CommandXboxController (slot 0)
 
     configureBindings();
   }
@@ -22,7 +26,7 @@ public class RobotContainer {
   private void configureBindings() {
 
     // STEP 4: Set the Swerve default command to Swerve's driveFieldRelative command.
-    // Pass in the XBoxController values and add a Deadband
+    // Pass in the CommandXBoxController supplier methods
   }
 
   public void teleopInit() {}
